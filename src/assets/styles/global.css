@@ -1,0 +1,133 @@
+/* ./src/styles/global.css */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+@font-face {
+  font-family: "riot_squad_nfregular";
+  src: url("../fonts/riotsquad.regular.ttf");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* this property is not predefined in tailwind */
+.height-min-content {
+  height: min-content;
+}
+.custom-bg-pos {
+  background-position: 0 -35px;
+}
+
+
+.linkBorder{
+  border-bottom: 2px solid blue;
+}
+.ourCustomers li:hover{
+
+  border-bottom: 2px solid blue;
+}
+.ourCustomers span{
+  color: blue;
+}
+
+.blogContainer img{
+  width: 90%;
+}
+.blogContainer h1{
+  font-weight: 400;
+}
+.blogContainer ul li{
+  font-size: 18px;
+  line-height: 35px;
+  padding-top: 5px;
+;
+}
+
+@media(max-width:1440){
+  .ourCustomers li{
+    font-size: 25px;
+  }
+}
+
+@media(max-width:526px){
+  .blogContainer img{
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.font{
+  width: 45px !important;
+  height: 45px;
+  border: 1.5px solid rgb(0, 0, 0);
+  border-radius: 100%;
+}
+.font:hover {
+  border: none;
+}
+
+.wpmlarea {
+  background: url(assets/images/area-wpml.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wpml_feature {
+  background-image: url(assets/images/WPML_Features_1.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gam-wmpl {
+  width: 54px !important;
+  height: 54px !important;
+  background: url(https://skins.tomedes.com/frontend/images/wpml/wpml_sprite.png) -368px
+    118px;
+}
+.chat-wmpl {
+  width: 54px !important;
+  height: 54px !important;
+  background: url(https://skins.tomedes.com/frontend/images/wpml/wpml_sprite.png) -442px
+    118px;
+}
+.set-wmpl {
+  width: 54px !important;
+  height: 54px !important;
+  background: url(https://skins.tomedes.com/frontend/images/wpml/wpml_sprite.png) -516px
+    118px;
+}
+
+.lang-wmpl {
+  width: 54px !important;
+  height: 54px !important;
+  background: url(https://skins.tomedes.com/frontend/images/wpml/wpml_sprite.png) -590px
+    118px;
+}
+
+.seo-wmpl {
+  width: 54px !important;
+  height: 54px !important;
+  background: url(https://skins.tomedes.com/frontend/images/wpml/wpml_sprite.png) -664px
+    118px;
+}
+
+.safe-wmpl {
+  width: 54px !important;
+  height: 54px !important;
+  background: url(https://skins.tomedes.com/frontend/images/wpml/wpml_sprite.png) -738px
+    118px;
+}
+
