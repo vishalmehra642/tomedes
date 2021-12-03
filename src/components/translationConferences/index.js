@@ -3,7 +3,7 @@ import ConferenceComp from "components/translationConferences/conferenceComp";
 import Bussiness from "assets/images/business.png";
 import customerSupport from "assets/images/customer-support.png";
 import Guarantee from "assets/images/guarantee.png";
-import { Location } from "components/translationConferences/config";
+import { CountryArray } from "utils/constants";
 import { Afganisthan } from "components/translationConferences/config";
 
 function Confrence() {
@@ -36,8 +36,8 @@ function Confrence() {
                   className="text-inputGray py-3 px-2 bg-white rounded-sm h-10 border border-inputBorder"
                 >
                   <option>Location</option>
-                  {Location
-                    ? Location.map(({ name }, index) => (
+                  {CountryArray
+                    ? CountryArray.map(({ name }, index) => (
                         <option key={index} value={name}>
                           {name}
                         </option>
