@@ -1,30 +1,30 @@
-import EmailerLocation from 'components/LocationReusableComp/emailer'
-import React from 'react'
+import EmailerLocation from "components/LocationReusableComp/emailer";
+import React from "react";
 import LocationBanner from "components/locationBanner/index";
-import ServicesGrid from 'components/homepage/servicesGrid';
-import { Link } from 'gatsby';
-import CommonUse from 'components/LocationReusableComp/commonuse';
-import { LanguagesInSanDiego, SanDiegoData } from './config';
-import SpeceficTranslation from 'components/LocationReusableComp/speceficTranslation';
-import TrustedTranslation from 'components/LocationReusableComp/trustedtranslation';
-import LookingTranslator from 'components/LocationReusableComp/looking';
-import Popular from 'components/LocationReusableComp/popular';
-import WhatChooseUs from 'components/homepage/whyChooseUs';
-import Reviews from 'components/homepage/reviews';
-import TranslationServices from 'components/homepage/translationServices';
+import ServicesGrid from "components/homepage/servicesGrid";
+import { Link } from "gatsby";
+import CommonUse from "components/LocationReusableComp/commonuse";
+import { LanguagesInSanDiego, SanDiegoData } from "./config";
+import SpeceficTranslation from "components/LocationReusableComp/speceficTranslation";
+import TrustedTranslation from "components/LocationReusableComp/trustedtranslation";
+import LookingTranslator from "components/LocationReusableComp/looking";
+import Popular from "components/LocationReusableComp/popular";
+import WhatChooseUs from "components/homepage/whyChooseUs";
+import Reviews from "components/homepage/reviews";
+import TranslationServices from "components/homepage/translationServices";
 
 const index = () => {
-    return (
-        <>
-             <LocationBanner
+  return (
+    <>
+      <LocationBanner
         title="San Diego Translation Services"
         content="Are you on the lookout for translation services in San Diego? It’s a good thing Tomedes is here. Tomedes translation company has language services suitable for every major industry and supports over 120 languages and 950+ language pairs. Out of all the translation companies in San Diego, Tomedes can offer you a 1-year guarantee, a trusted 24/7 customer support line, and rapid delivery on all transactions."
         formOrangeHead="Contact "
         formWhiteHead="our translation company now"
       />
-      <EmailerLocation /> 
+      <EmailerLocation />
       <ServicesGrid
-      backgroundCol="bg-darkBlue"
+        backgroundCol="bg-darkBlue"
         heading="Translation Services
         Suitable for Every
         Major Industry in San
@@ -39,7 +39,7 @@ const index = () => {
           </Link>
         }
       />
-        <CommonUse
+      <CommonUse
         backgroundCol="bg-midBlue"
         title="Popular Certified Translation Services in San Diego"
         para="Tomedes has the ATA authority to provide certified translation services for all interested San Diego businesses. All your documents can be certified for use for all authoritative bodies. Our certified translation services include:"
@@ -53,7 +53,7 @@ const index = () => {
         Content="We provide document translation services for specialized projects in fields such as engineering, legal, military and medical fields. Our translators are more than equipped to provide these services: a translator for the engineering field will be knowledgeable about industry terminologies, and the same goes for the military translator."
       />
       <TrustedTranslation
-      backgroundCol="bg-midBlue"
+        backgroundCol="bg-midBlue"
         headColor="text-orange"
         ColorHead="More "
         SecondWhite="Translation Services Available"
@@ -61,22 +61,22 @@ const index = () => {
         getStarted
       />
       <LookingTranslator
-      backgroundCol="bg-darkBlue"
+        backgroundCol="bg-darkBlue"
         picture="https://skins.tomedes.com/frontend/images/location_new/cta_sandiego.webp"
         translationAt="for a translation company in San Diego?"
         detail="Our translation services in San Diego, CA makes sure that you can get your translations on-demand and delivered on time. If you’re interested in one of the leading translation companies in San Diego, give us a call."
         location="San Diego "
         countryName=",CA,USA"
       />
-       <SpeceficTranslation
-       FirstWhite="Your Data Security and Privacy is our"
+      <SpeceficTranslation
+        FirstWhite="Your Data Security and Privacy is our"
         SecondWhite=" "
         backgroundCol="bg-midBlue"
         ColorHead="Priority"
         headColor="text-lightBlue"
         Content="Security and confidentiality is key to the operation of any business. So, when working with our clients, Tomedes uses industry standard measures such as data encryption, and proactive, end-to-end cybersecurity. This is to make sure your personal and proprietary information is secure and confidential. Tomedes translators and project managers are all under non-disclosure agreement contracts, in order to provide additional measures for your information’s security."
       />
-        <Popular
+      <Popular
         backgroundCol="bg-darkBlue"
         bottomBorderText
         footerTitle="More Available Languages"
@@ -87,11 +87,11 @@ const index = () => {
         location=" "
         data={LanguagesInSanDiego}
       />
-       <WhatChooseUs backgroundCol="bg-midBlue"  />
-      <Reviews  backgroundCol="bg-darkBlue"  />
-      <TranslationServices backgroundCol="bg-midBlue"  />
-        </>
-    )
-}
+      <WhatChooseUs backgroundCol="bg-midBlue" />
+      <Reviews backgroundCol="bg-darkBlue" />
+      <TranslationServices backgroundCol="bg-midBlue" />
+    </>
+  );
+};
 
-export default index
+export default index;

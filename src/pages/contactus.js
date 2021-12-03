@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "components/layout";
+import { CountryArray } from "utils/constants";
 
 export default function index() {
   return (
@@ -111,18 +112,20 @@ export default function index() {
                 >
                   Country
                 </label>
-                <select
-                  className="appearance-none block w-full bg-white text-gray-700 text-2xl font-light border border-grayInput  py-1.5 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                  type="name"
-                  placeholder="Country"
+                 <select
+                  // onChange={handleSelect}
+                  id="countries"
                   name="country"
+                  className="appearance-none block w-full bg-white text-gray-700 text-2xl font-light border border-grayInput  py-1.5 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 >
-                  <option
-                    value="Select Country"
-                    className="text-gray-700 text-2xl font-light"
-                  >
-                    Select Country
-                  </option>
+                  <option>Select Country</option>
+                  {CountryArray
+                    ? CountryArray.map(({ name }, index) => (
+                        <option key={index} value={name} className="text-gray-700 text-2xl font-light">
+                          {name}
+                        </option>
+                      ))
+                    : null}
                 </select>
               </div>
             </div>
